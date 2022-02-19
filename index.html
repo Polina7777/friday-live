@@ -5,34 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
     <title>Friday live coding</title>
 </head>
 
 <body>
-    <main>
-        <wrapper class="wrapper wrapper__header">
-        <header class="header">
-            <div class="logo">
-                <img src="/assets/image/Logo.svg" alt="logo">
-            </div>
-            <nav class="header-navigation__navigation">
-                <ul class="navigation__list">
-                    <li class="navigation__item"> <a href class="item__link">Home</a></li>
-                    <li class="navigation__item"><a href class="item__link">Services</a></li>
-                    <li class="navigation__item"><a href class="item__link">About</a></li>
-                    <li class="navigation__item"><a href class="item__link">Product</a></li>
-                </ul>
-            </nav>
-            <div class="header__buttons">
-                <button class="button button_bordered">Sing in</button>
-                <button class="button button_colored">Sing up</button>
-            </div>
 
-        </header>
+    <wrapper class="wrapper wrapper__header">
+        <section class="header-content">
+            <header class="header">
+                <div class="logo">
+                    <img src="/assets/image/Logo.svg" alt="logo">
+                </div>
+                <nav class="header-navigation__navigation">
+                    <ul class="navigation__list">
+                        <li class="list__item"> <a href class="item__link">Home</a></li>
+                        <li class="list__item"><a href class="item__link">Services</a></li>
+                        <li class="list__item"><a href class="item__link">About</a></li>
+                        <li class="list__item"><a href class="item__link">Product</a></li>
+                    </ul>
+                </nav>
+                <div class="header__buttons">
+                    <button class="button button_bordered">Sing in</button>
+                    <button class="button button_colored">Sing up</button>
+                </div>
+
+            </header>
+        </section>
     </wrapper>
-        <wrapper class="wrapper wrapper__promo">
+    <main>
+        <wrapper class="wrapper promo__wrapper">
             <section class="promo">
                 <div class="promo-content">
                     <h1 class="promo-content__title">The Design Thinking superpowers</h1>
@@ -49,8 +52,9 @@
                 </div>
             </section>
         </wrapper>
-        <wrapper class="wrapper wrappper__tools">
+        <wrapper class="wrapper tools__wrapper">
             <section class="tools">
+
                 <h2 class="tools__title">We design tools to unveil your superpowers</h2>
                 <div class="layout-4-column">
                     <div class="tool__icon">
@@ -84,9 +88,10 @@
                 <div class="tools__button">
                     <button>Sign Up now</button>
                 </div>
+
             </section>
         </wrapper>
-        <wrapper class="wrapper wrapper__strategies">
+        <wrapper class="wrapper strategies__wrapper">
             <section class="marketing-strategies">
                 <h2 class="marketing-strategies__title">Marketing Strategies</h2>
                 <p class="marketing-strategies__text">Join 40,000+ other marketers and get proven strategies on email
@@ -170,7 +175,7 @@
                     </div>
             </section>
         </wrapper>
-        <wrapper class="wrapper wrapper__about-us">
+        <wrapper class="wrapper about-us__wrapper">
             <section class="about-us">
                 <h2 class="about-us__title">About Us</h2>
                 <p class="about-us__article">Your About Us page is vital. It’s often the first stop in any user’s
@@ -207,58 +212,77 @@
 
             </section>
         </wrapper>
-        <wrapper class="wrapper__wrapper-contacts">
+        <wrapper class="wrapper contacts__wrapper">
             <section class="contact-us">
-                <div class="contact-us__information">
-                    <h2 class="contact-us__title">Contact Us</h2>
-                    <p class="contact-us__article">Your About Us page is vital. It’s often the first stop in any user’s journey through a website or blog. It also shouldn’t be their last, because first impressions count online just as much as they do in the real world. If your visitors aren’t impressed, you can expect them to leave without reading your awesome content or completing a conversion action (e.g., signing up for your newsletter, making a purchase).</p>
-                    <div class="telefon">
-                        <img class="telefon__image" src="/assets/image/icons/phone-icon.svg" alt="phone-icon">
-                        <a class="telefon__number" href="tel:+375(22)345-00-00">+375 (22) 345-00-99</a>
+                <div class="layout-2-column">
+                    <div class="contact-us__information">
+                        <h2 class="contact-us__title">Contact Us</h2>
+                        <p class="contact-us__article">Your About Us page is vital. It’s often the first stop in any
+                            user’s journey through a website or blog. It also shouldn’t be their last, because first
+                            impressions count online just as much as they do in the real world. If your visitors aren’t
+                            impressed, you can expect them to leave without reading your awesome content or completing a
+                            conversion action (e.g., signing up for your newsletter, making a purchase).</p>
+                        <div class="telefon">
+                            <img class="telefon__image" src="/assets/image/icons/phone-icon.svg" alt="phone-icon">
+                            <a class="telefon__number" href="tel:+375(22)345-00-00">+375 (22) 345-00-99</a>
+                        </div>
+                        <div class="mail">
+                            <img class="mail__image" src="/assets/image/icons/mail-icon.svg" alt="mail-icon">
+                            <a class="mail__address" href="mailto:emailname@gmail.com">emailname@gmail.com</a>
+                        </div>
                     </div>
-                    <div class="mail">
-                        <img class="mail__image" src="/assets/image/icons/mail-icon.svg" alt="mail-icon">
-                       <a class="mail__address" href="mailto:emailname@gmail.com">emailname@gmail.com</a>
+                    <div class="form">
+                        <form action method="post">
+                            <div class="layout-2-column">
+                                <input type="text" name="name" placeholder="Your name">
+                                <input type="email" name="email" placeholder="Your email">
+                            </div>
+                            <textarea name="question" cols="30" rows="10"></textarea>
+                            <div class="contact-us__button">
+                                <button type="submit" class="button button_colored">Send</button>
+
+                            </div>
+
+                        </form>
                     </div>
                 </div>
-            
             </section>
         </wrapper>
     </main>
-    <wrapper class="wrapper wrapper__footer">
-    <footer class="footer">
-        <div class="logo">
-            <img src="/assets/image/Logo.svg" alt="logo">
+    <wrapper class="wrapper footer__wrapper">
+        <footer class="footer">
+            <div class="logo">
+                <img src="/assets/image/Logo.svg" alt="logo">
             </div>
-        <div class="footer-navigation__navigation">  
-            <div class="quick-links">
-              <ul class="quick-links__list">
-                  <li class="list__item"><a href class="item__link">About Us</a></li>
-                  <li class="list__item"><a href class="item__link">Blog</a></li>
-                  <li class="list__item"><a href class="item__link">Contacts</a></li>
-                  <li class="list__item"><a href class="item__link">FAQ</a></li>
-              </ul>  
+            <div class="footer-navigation__navigation">
+                <div class="quick-links">
+                    <ul class="quick-links__list">
+                        <li class="list__item"><a href class="item__link">About Us</a></li>
+                        <li class="list__item"><a href class="item__link">Blog</a></li>
+                        <li class="list__item"><a href class="item__link">Contacts</a></li>
+                        <li class="list__item"><a href class="item__link">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="legal-stuff">
+                    <ul class="legal-stuff__list">
+                        <li class="list__item"><a href class="item__link">Disclaimer</a></li>
+                        <li class="list__item"><a href class="item__link">Financing</a></li>
+                        <li class="list__item"><a href class="item__link">Privacy Policy</a></li>
+                        <li class="list__item"><a href class="item__link">Term of Service</a></li>
+                    </ul>
+                </div>
+                <div class="quick-links">
+                    <ul class="quick-links__list">
+                        <li class="list__item"><a href class="item__link">About Us</a></li>
+                        <li class="list__item"><a href class="item__link">Blog</a></li>
+                        <li class="list__item"><a href class="item__link">Contacts</a></li>
+                        <li class="list__item"><a href class="item__link">FAQ</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="legal-stuff">
-                <ul class="legal-stuff__list">
-                    <li class="list__item"><a href class="item__link">Disclaimer</a></li>
-                    <li class="list__item"><a href class="item__link">Financing</a></li>
-                    <li class="list__item"><a href class="item__link">Privacy Policy</a></li>
-                    <li class="list__item"><a href class="item__link">Term of Service</a></li>
-                </ul>  
-              </div>
-              <div class="quick-links">
-                <ul class="quick-links__list">
-                    <li class="list__item"><a href class="item__link">About Us</a></li>
-                    <li class="list__item"><a href class="item__link">Blog</a></li>
-                    <li class="list__item"><a href class="item__link">Contacts</a></li>
-                    <li class="list__item"><a href class="item__link">FAQ</a></li>
-                </ul>  
-              </div>
-        </div>
-       
-    </footer>
-</wrapper>
+
+        </footer>
+    </wrapper>
 </body>
 
 </html>

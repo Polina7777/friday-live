@@ -1,0 +1,22 @@
+.button {
+    padding: 11px 25px 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    &_bordered {
+        background-color: $color-light;
+        border: 3px solid $color-border;
+        color: $color-text;
+    }
+    &_colored {
+        background-color: $color-primary;
+        color: $color-light;
+        border: 3px solid $color-primary;
+    }
+}
+
+
