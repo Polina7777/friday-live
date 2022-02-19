@@ -2,13 +2,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 30px; 
+ 
+   
+    &.promo__buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-right:44px ;
+    }
 }
-.wrapper__promo {
-    padding: 30px 0;
-}
-.promo__content {
+.promo-content {
     padding-right: 65px;
-}
-.promo__buttons {
-    margin-right:44px ;
-}
+    }
+
