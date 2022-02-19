@@ -1,0 +1,16 @@
+.about-us {
+    .about-us__article {
+        padding-bottom: 26px;
+    }
+    .layout-3-column-employees {
+        justify-content: space-between;
+        padding-bottom: 101px;
+    }
+   .employees-card {
+    display:flex;
+    border: 3px solid $color-border;
+    padding: 36px 0px 0px 30px;
+    margin-right: 33px;
+   }
+}
+

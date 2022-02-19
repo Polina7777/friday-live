@@ -47,6 +47,7 @@ h5 {
   font-size: 16px;
   line-height: 26px;
   margin: 0 px 16px;
+  margin: 0px;
 }
 
 h6 {
@@ -54,6 +55,16 @@ h6 {
   font-weight: normal;
   font-size: 18px;
   line-height: 28px;
+}
+
+p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: #544837;
+  margin: 0px;
 }
 
 ul {
@@ -95,24 +106,12 @@ ul {
   display: flex;
 }
 
-.layout-3-column__cards {
+.layout-3-column {
   display: flex;
-}
-.layout-3-column__cards .tag-card {
-  margin-right: 30px;
-  margin-bottom: 30px;
-  border: 2px #F5F5F5 solid;
-  border-radius: 8px;
-}
-.layout-3-column__cards .tag-card:last-child {
-  margin-right: 0px;
 }
 
-.layout-2-column__cards {
+.layout-2-column {
   display: flex;
-}
-.layout-2-column__cards .tag-card {
-  padding-right: 30px;
 }
 
 section {
@@ -122,7 +121,7 @@ section {
 }
 
 .wrapper {
-  max-width: 1197px;
+  max-width: 100%;
   width: 100%;
 }
 
@@ -216,8 +215,76 @@ section {
   background-color: #FF9900;
 }
 
-.contacts-us {
+.layout-3-column__cards {
+  display: flex;
+}
+.layout-3-column__cards .tag-card {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border: 2px #F5F5F5 solid;
+  border-radius: 8px;
+}
+.layout-3-column__cards .tag-card:last-child {
+  margin-right: 0px;
+}
+
+.layout-2-column__cards {
+  display: flex;
+}
+.layout-2-column__cards .tag-card {
+  padding-right: 30px;
+}
+
+.about-us .about-us__article {
+  padding-bottom: 26px;
+}
+.about-us .layout-3-column-employees {
+  justify-content: space-between;
+  padding-bottom: 101px;
+}
+.about-us .employees-card {
+  display: flex;
+  border: 3px solid #F5F5F5;
+  padding: 36px 0px 0px 30px;
+  margin-right: 33px;
+}
+
+.contact-us__background {
+  max-width: 100%;
   background-color: #FFEEE1;
+}
+
+.contact-us .contact-us__information {
+  padding-right: 91px;
+  padding-top: 60px;
+}
+.contact-us .contact-us__article {
+  padding-bottom: 33px;
+}
+.contact-us .telefon__number {
+  text-decoration: none;
+  color: #544837;
+}
+.contact-us .mail {
+  padding-bottom: 90px;
+}
+.contact-us .mail__address {
+  text-decoration: none;
+  color: #544837;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form input {
+  color: #C6C6C6;
+  padding-right: 20px;
+}
+.form .form-question {
+  width: 100%;
+  color: #C6C6C6;
 }
 
 /*# sourceMappingURL=style.css.map */

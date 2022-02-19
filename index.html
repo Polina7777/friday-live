@@ -193,30 +193,30 @@
         <wrapper class="wrapper about-us__wrapper">
             <section class="about-us">
                 <h2 class="about-us__title">About Us</h2>
-                <p class="about-us__article">Your About Us page is vital. It’s often the first stop in any user’s
+                <h5 class="about-us__article">Your About Us page is vital. It’s often the first stop in any user’s
                     journey through a website or blog. It also shouldn’t be their last, because first impressions count
                     online just as much as they do in the real world. If your visitors aren’t impressed, you can expect
                     them to leave without reading your awesome content or completing a conversion action (e.g., signing
-                    up for your newsletter, making a purchase).</p>
-                <div class="layout-3-column__employees employees">
-                    <div class="employees__first-card first-card">
-                        <div class="first-card__information">
+                    up for your newsletter, making a purchase).</h5>
+                <div class="layout-3-column layout-3-column-employees">
+                    <div class="employees-card first-card">
+                        <div class="person-info first-card__information">
                             <h5 class="first-card__name">Kathy Rosenberg</h5>
                             <p class="third-card__specialization">Product Mannager</p>
                             <a href="mailto:kathyr@gmail.com">kathyr@gmail.com</a>
                         </div>
                         <img class="first-card__foto" src="/assets/image/avators/avator1.jpg" alt="avator1">
                     </div>
-                    <div class="employees__second-card second-card">
-                        <div class="second-card__information">
+                    <div class="employees-card second-card">
+                        <div class="person-info second-card__information">
                             <h5 class="second-card__name">Alexandra Boyarskaya</h5>
                             <p class="third-card__specialization">Support Marketing Specialist</p>
                             <a href="mailto:alexandrab@gmail.com">alexandrab@gmail.com</a>
                         </div>
                         <img class="second-card__foto" src="/assets/image/avators/avator2.jpg" alt="avator2">
                     </div>
-                    <div class="employees__third-card third-card">
-                        <div class="third-card__information">
+                    <div class="employees-card third-card">
+                        <div class="person-info third-card__information">
                             <h5 class="third-card__name">Melani Amini</h5>
                             <p class="third-card__specialization">Photographer</p>
                             <a href="mailto:melania@gmail.com">melania@gmail.com</a>
@@ -228,43 +228,48 @@
             </section>
         </wrapper>
         <wrapper class="wrapper contacts__wrapper">
-            <section class="contact-us">
-                <div class="layout-2-column">
-                    <div class="contact-us__information">
-                        <h2 class="contact-us__title">Contact Us</h2>
-                        <p class="contact-us__article">Your About Us page is vital. It’s often the first stop in any
-                            user’s journey through a website or blog. It also shouldn’t be their last, because first
-                            impressions count online just as much as they do in the real world. If your visitors aren’t
-                            impressed, you can expect them to leave without reading your awesome content or completing a
-                            conversion action (e.g., signing up for your newsletter, making a purchase).</p>
-                        <div class="telefon">
-                            <img class="telefon__image" src="/assets/image/icons/phone-icon.svg" alt="phone-icon">
-                            <a class="telefon__number" href="tel:+375(22)345-00-00">+375 (22) 345-00-99</a>
+            <section class="contact-us__background">
+                <section class="contact-us">
+                    <div class="layout-2-column">
+                        <div class="contact-us__information">
+                            <h2 class="contact-us__title">Contact Us</h2>
+                            <h5 class="contact-us__article">Your About Us page is vital. It’s often the first stop in any
+                                user’s journey through a website or blog. It also shouldn’t be their last, because first
+                                impressions count online just as much as they do in the real world. If your visitors
+                                aren’t
+                                impressed, you can expect them to leave without reading your awesome content or
+                                completing a
+                                conversion action (e.g., signing up for your newsletter, making a purchase).</h5>
+                            <div class="telefon">
+                                <img class="telefon__image" src="/assets/image/icons/phone-icon.svg" alt="phone-icon">
+                                <a class="telefon__number" href="tel:+375(22)345-00-00">+375 (22) 345-00-99</a>
+                            </div>
+                            <div class="mail">
+                                <img class="mail__image" src="/assets/image/icons/mail-icon.svg" alt="mail-icon">
+                                <a class="mail__address" href="mailto:emailname@gmail.com">emailname@gmail.com</a>
+                            </div>
                         </div>
-                        <div class="mail">
-                            <img class="mail__image" src="/assets/image/icons/mail-icon.svg" alt="mail-icon">
-                            <a class="mail__address" href="mailto:emailname@gmail.com">emailname@gmail.com</a>
+                        <div class="form">
+                            <form action method="post">
+                                <div class="layout-2-column">
+                                    <input type="text" name="name" placeholder="Your name">
+                                    <input type="email" name="email" placeholder="Your email">
+                                </div>
+                                <textarea class="form-question" name="question" cols="30" rows="10">What do You want to ask?</textarea>
+                                <div class="contact-us__button">
+                                    <button type="submit" class="button button_colored">Send</button>
+
+                                </div>
+
+                            </form>
                         </div>
                     </div>
-                    <div class="form">
-                        <form action method="post">
-                            <div class="layout-2-column">
-                                <input type="text" name="name" placeholder="Your name">
-                                <input type="email" name="email" placeholder="Your email">
-                            </div>
-                            <textarea name="question" cols="30" rows="10"></textarea>
-                            <div class="contact-us__button">
-                                <button type="submit" class="button button_colored">Send</button>
-
-                            </div>
-
-                        </form>
-                    </div>
-                </div>
+                </section>
             </section>
         </wrapper>
     </main>
     <wrapper class="wrapper footer__wrapper">
+        <section class="footer">
         <footer class="footer">
             <div class="logo">
                 <img src="/assets/image/Logo.svg" alt="logo">
@@ -297,6 +302,7 @@
             </div>
 
         </footer>
+    </section>
     </wrapper>
 </body>
 

@@ -1,0 +1,39 @@
+.contact-us__background    {
+    max-width: 100%;
+    background-color: $color-background;
+}
+.contact-us {
+ .contact-us__information {
+     padding-right: 91px;
+     padding-top: 60px;
+ }
+ .contact-us__article {
+    padding-bottom: 33px;;
+ }
+ .telefon__number {
+     text-decoration: none;
+     color: $color-text;
+    
+ }
+ .mail {
+    padding-bottom: 90px;
+ }
+ .mail__address {
+    text-decoration: none;
+    color: $color-text;  
+ }
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    input {
+        color: $color-form;
+        padding-right: 20px;
+    }
+  
+    .form-question {
+        width: 100%;
+        color: $color-form;
+    }
+}
