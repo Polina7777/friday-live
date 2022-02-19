@@ -1,0 +1,23 @@
+.tools {
+    background-position: bottom;
+    background-repeat: no-repeat;
+  .tools__title {
+    text-align: center;
+    padding: 152px 0px 70px;
+   
+    }
+    .tool-card {
+        padding-right: 85px;
+        max-width: 262px;
+    }
+    .tools__button{
+        display: flex;
+        justify-content: center;
+        padding: 60px 0px 90px;
+    }
+    .button__tools {
+        text-align: center;
+    }
+    background-image:url(/assets/image/background-tools.svg);
+   
+}

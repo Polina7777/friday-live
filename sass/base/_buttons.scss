@@ -18,6 +18,16 @@
         color: $color-light;
         border: 3px solid $color-primary;
     }
+    &_big {
+        padding:15px 40px;
+         
+    }
+    &_small {
+        background-color: $color-border;
+        padding: 7px 14px;
+        border-radius: 90px;
+        
+    }
 }
 
 

@@ -5,6 +5,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -16,6 +17,7 @@ h1 {
 }
 
 h2 {
+  font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 34px;
@@ -23,6 +25,7 @@ h2 {
 }
 
 h3 {
+  font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -30,6 +33,7 @@ h3 {
 }
 
 h4 {
+  font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
@@ -37,10 +41,12 @@ h4 {
 }
 
 h5 {
+  font-family: Open Sans;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 16px;
   line-height: 26px;
+  margin: 0 px 16px;
 }
 
 h6 {
@@ -76,10 +82,48 @@ ul {
   color: #FFFFFF;
   border: 3px solid #FF9900;
 }
+.button_big {
+  padding: 15px 40px;
+}
+.button_small {
+  background-color: #F5F5F5;
+  padding: 7px 14px;
+  border-radius: 90px;
+}
+
+.layout-4-column {
+  display: flex;
+}
+
+.layout-3-column__cards {
+  display: flex;
+}
+.layout-3-column__cards .tag-card {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border: 2px #F5F5F5 solid;
+  border-radius: 8px;
+}
+.layout-3-column__cards .tag-card:last-child {
+  margin-right: 0px;
+}
+
+.layout-2-column__cards {
+  display: flex;
+}
+.layout-2-column__cards .tag-card {
+  padding-right: 30px;
+}
 
 section {
   max-width: 1197px;
+  width: 100%;
   margin: auto;
+}
+
+.wrapper {
+  max-width: 1197px;
+  width: 100%;
 }
 
 .header {
@@ -137,8 +181,39 @@ section {
   padding-right: 44px;
   padding-top: 20px;
 }
-.promo__buttons .button_promo {
-  padding: 15px 40px;
+
+.tools {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url(/assets/image/background-tools.svg);
+}
+.tools .tools__title {
+  text-align: center;
+  padding: 152px 0px 70px;
+}
+.tools .tool-card {
+  padding-right: 85px;
+  max-width: 262px;
+}
+.tools .tools__button {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0px 90px;
+}
+.tools .button__tools {
+  text-align: center;
+}
+
+.marketing-strategies .tag-card__button {
+  padding-bottom: 26px;
+}
+
+.marketing-strategies__tags {
+  padding-top: 25px;
+  padding-bottom: 31px;
+}
+.marketing-strategies__tags .tag__button:first-child {
+  background-color: #FF9900;
 }
 
 .contacts-us {

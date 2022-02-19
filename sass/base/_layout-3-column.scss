@@ -1,0 +1,12 @@
+.layout-3-column__cards {
+    display: flex;
+    .tag-card {
+        margin-right: 30px;
+        margin-bottom: 30px;
+        border: 2px $color-border solid;
+        border-radius: 8px;
+    }
+    .tag-card:last-child {
+        margin-right: 0px;
+    }
+}

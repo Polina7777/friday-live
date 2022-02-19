@@ -1,0 +1,13 @@
+.marketing-strategies {
+    .tag-card__button {
+        padding-bottom: 26px;
+    }
+    
+}
+.marketing-strategies__tags {
+    padding-top: 25px;
+    padding-bottom: 31px;
+    .tag__button:first-child {
+        background-color: $color-primary;
+    }
+}
