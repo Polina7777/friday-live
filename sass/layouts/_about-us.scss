@@ -8,9 +8,20 @@
     }
    .employees-card {
     display:flex;
+    position: relative;
     border: 3px solid $color-border;
-    padding: 36px 0px 0px 30px;
+    padding: 36px 0px 30px 30px;
     margin-right: 33px;
+    .employees-foto {
+        position: absolute ;
+        top:10px;
+        left:250px;
+       
+    }
    }
+   
 }
-
+.person-info {
+    padding-right: 65px;
+    
+}

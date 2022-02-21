@@ -8,6 +8,9 @@
     cursor: pointer;
     transition: all 0.3s;
     border-radius: 4px;
+    
+        background-color: $color-additional ;
+    
     &_bordered {
         background-color: $color-light;
         border: 3px solid $color-border;
@@ -17,6 +20,9 @@
         background-color: $color-primary;
         color: $color-light;
         border: 3px solid $color-primary;
+        &:hover {
+            background-color: $color-additional ;
+        }
     }
     &_big {
         padding:15px 40px;
