@@ -27,13 +27,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     input {
         color: $color-form;
         padding-right: 20px;
+        border: 2px solid $color-light;
+        border-radius: 4px;
+        margin:0px 20px 10px 0px;
+        color: $color-form;
+        
     }
   
     .form-question {
         width: 100%;
         color: $color-form;
+        border: 2px solid $color-light;
+        border-radius: 4px;
+        margin-bottom: 15px;
     }
 }

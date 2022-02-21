@@ -14,10 +14,18 @@
         display: flex;
         justify-content: center;
         padding: 60px 0px 90px;
+        .button-tools {
+           &:hover {
+               background-color:$color-additional;
+        }
     }
+        
+    
     .button__tools {
         text-align: center;
+       
     }
     background-image:url(/assets/image/background-tools.svg);
    
+}
 }

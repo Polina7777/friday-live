@@ -1,9 +1,5 @@
-.marketing-strategies {
-    .tag-card__button {
-        padding-bottom: 26px;
-    }
+
     
-}
 .marketing-strategies__tags {
     padding-top: 25px;
     padding-bottom: 31px;
@@ -13,6 +9,14 @@
 }
 .layout-3-column__cards {
     display: flex;
+  h3 {
+      padding: 0px 30px;
+  }
+  
+  .tag-card__button {
+    padding: 0px 30px;
+    padding-bottom: 26px
+  }
     .tag-card {
         margin-right: 30px;
         margin-bottom: 30px;
@@ -25,6 +29,13 @@
 }
 .layout-2-column__cards {
     display: flex;
+    h3 {
+        padding: 0px 30px;
+    }
+    .tag-card__button {
+      padding: 0px 30px;
+      padding-bottom: 26px
+    }
     .tag-card {
         padding-right: 30px;
     }

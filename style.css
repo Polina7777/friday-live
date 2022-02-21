@@ -10,59 +10,66 @@ body {
 
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 44px;
   font-style: normal;
   font-weight: bold;
-  font-size: 44px;
   line-height: 54px;
 }
 
 h2 {
   font-family: Open Sans;
+  font-size: 34px;
   font-style: normal;
   font-weight: bold;
-  font-size: 34px;
   line-height: 46px;
 }
 
 h3 {
   font-family: Open Sans;
+  font-size: 24px;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
   line-height: 34px;
 }
 
 h4 {
   font-family: Open Sans;
+  font-size: 22px;
   font-style: normal;
   font-weight: 600;
-  font-size: 22px;
   line-height: 30px;
 }
 
 h5 {
   font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 26px;
   margin: 0 px 16px;
   margin: 0px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 26px;
 }
 
 h6 {
+  font-size: 18px;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
   line-height: 28px;
 }
 
+h7 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+}
+
 p {
-  font-family: Open Sans;
+  font-size: 14px;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
   line-height: 26px;
+  font-family: Open Sans;
   color: #544837;
   margin: 0px;
 }
@@ -184,7 +191,6 @@ section {
 .tools {
   background-position: bottom;
   background-repeat: no-repeat;
-  background-image: url(/assets/image/background-tools.svg);
 }
 .tools .tools__title {
   text-align: center;
@@ -198,13 +204,13 @@ section {
   display: flex;
   justify-content: center;
   padding: 60px 0px 90px;
+  background-image: url(/assets/image/background-tools.svg);
 }
-.tools .button__tools {
+.tools .tools__button .button-tools:hover {
+  background-color: #FF7549;
+}
+.tools .tools__button .button__tools {
   text-align: center;
-}
-
-.marketing-strategies .tag-card__button {
-  padding-bottom: 26px;
 }
 
 .marketing-strategies__tags {
@@ -218,6 +224,13 @@ section {
 .layout-3-column__cards {
   display: flex;
 }
+.layout-3-column__cards h3 {
+  padding: 0px 30px;
+}
+.layout-3-column__cards .tag-card__button {
+  padding: 0px 30px;
+  padding-bottom: 26px;
+}
 .layout-3-column__cards .tag-card {
   margin-right: 30px;
   margin-bottom: 30px;
@@ -230,6 +243,13 @@ section {
 
 .layout-2-column__cards {
   display: flex;
+}
+.layout-2-column__cards h3 {
+  padding: 0px 30px;
+}
+.layout-2-column__cards .tag-card__button {
+  padding: 0px 30px;
+  padding-bottom: 26px;
 }
 .layout-2-column__cards .tag-card {
   padding-right: 30px;
@@ -281,10 +301,45 @@ section {
 .form input {
   color: #C6C6C6;
   padding-right: 20px;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
+  margin: 0px 20px 10px 0px;
+  color: #C6C6C6;
 }
 .form .form-question {
   width: 100%;
   color: #C6C6C6;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+.footer .footer-navigation__navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .navigation-column {
+  padding-left: 151px;
+}
+.footer .list__item {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+.footer .list__item:first-child {
+  margin-top: 10px;
+}
+.footer .list__item:last-child {
+  margin-bottom: 72px;
+}
+.footer .item__link {
+  text-decoration: none;
+  color: #544837;
 }
 
 /*# sourceMappingURL=style.css.map */
