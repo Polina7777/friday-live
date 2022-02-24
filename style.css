@@ -192,6 +192,7 @@ section {
 }
 .promo .promo-link__text {
   color: #FF7549;
+  padding-left: 10px;
 }
 
 .promo__buttons {
@@ -289,15 +290,19 @@ section {
   border: 3px solid #F5F5F5;
   padding: 36px 0px 30px 30px;
   margin-right: 33px;
+  max-width: 345px;
+  width: 100%;
 }
 .about-us .employees-card .employees-foto {
   position: absolute;
-  top: 10px;
-  left: 250px;
+  top: 0px;
+  right: -67px;
 }
-
-.person-info {
-  padding-right: 65px;
+.about-us .employees-card .person-mail {
+  text-decoration: none;
+}
+.about-us .employees-card .person-mail a:hover {
+  text-decoration: underline;
 }
 
 .contact-us__background {
