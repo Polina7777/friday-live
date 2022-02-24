@@ -4,16 +4,18 @@
   .tools__title {
     text-align: center;
     padding: 152px 0px 70px;
-   
+    max-width: 462px;
+    margin: auto;
     }
     .tool-card {
-        padding-right: 85px;
         max-width: 262px;
+        margin: auto;
     }
     .tools__button{
         display: flex;
         justify-content: center;
         padding: 60px 0px 90px;
+        background-position: bottom;
         .button-tools {
            &:hover {
                background-color:$color-additional;

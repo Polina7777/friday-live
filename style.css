@@ -1,9 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 10px;
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   box-sizing: border-box;
 }
@@ -115,6 +119,7 @@ ul {
 
 .layout-4-column {
   display: flex;
+  justify-content: space-between;
 }
 
 .layout-3-column {
@@ -160,6 +165,9 @@ section {
   text-decoration: none;
   color: #544837;
 }
+.header__navigation .item__link:hover {
+  color: #FF7549;
+}
 
 .header__buttons .button {
   margin-left: 14px;
@@ -175,7 +183,7 @@ section {
   padding-top: 30px;
 }
 .promo .promo-content {
-  padding-right: 65px;
+  padding-right: 49px;
 }
 .promo .promo-link {
   display: flex;
@@ -199,15 +207,18 @@ section {
 .tools .tools__title {
   text-align: center;
   padding: 152px 0px 70px;
+  max-width: 462px;
+  margin: auto;
 }
 .tools .tool-card {
-  padding-right: 85px;
   max-width: 262px;
+  margin: auto;
 }
 .tools .tools__button {
   display: flex;
   justify-content: center;
   padding: 60px 0px 90px;
+  background-position: bottom;
   background-image: url(/assets/image/background-tools.svg);
 }
 .tools .tools__button .button-tools:hover {
@@ -244,6 +255,9 @@ section {
 .layout-3-column__cards .tag-card:last-child {
   margin-right: 0px;
 }
+.layout-3-column__cards .card-title:hover {
+  color: #FF7549;
+}
 
 .layout-2-column__cards {
   display: flex;
@@ -257,6 +271,9 @@ section {
 }
 .layout-2-column__cards .tag-card {
   padding-right: 30px;
+}
+.layout-2-column__cards .card-title:hover {
+  color: #FF7549;
 }
 
 .about-us .about-us__article {
@@ -312,13 +329,27 @@ section {
   flex-direction: column;
   justify-content: center;
 }
-.form input {
+.form input, .form textarea {
   color: #C6C6C6;
   padding-right: 20px;
   border: 2px solid #FFFFFF;
   border-radius: 4px;
-  margin: 0px 20px 10px 0px;
-  color: #C6C6C6;
+  margin-bottom: 10px;
+  resize: none;
+}
+.form input:focus, .form textarea:focus {
+  border: 1px solid color- #FF9900;
+  outline: none;
+}
+.form textarea {
+  width: 100%;
+  height: 162px;
+}
+.form input {
+  margin-right: 10px;
+}
+.form input:last-child {
+  margin-right: 0px;
 }
 .form .form-question {
   width: 100%;
@@ -353,7 +384,9 @@ section {
 }
 .footer .item__link {
   text-decoration: none;
-  color: #544837;
+}
+.footer .item__link:hover {
+  color: #FF7549;
 }
 
 /*# sourceMappingURL=style.css.map */

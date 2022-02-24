@@ -6,6 +6,7 @@
     .tag__button:first-child {
         background-color: $color-primary;
     }
+   
 }
 .layout-3-column__cards {
     display: flex;
@@ -26,6 +27,11 @@
     .tag-card:last-child {
         margin-right: 0px;
     }
+    .card-title {
+        &:hover {
+            color: $color-additional;
+        }
+    }
 }
 .layout-2-column__cards {
     display: flex;
@@ -38,5 +44,10 @@
     }
     .tag-card {
         padding-right: 30px;
+    }
+    .card-title {
+        &:hover {
+            color: $color-additional;
+        }
     }
 }
