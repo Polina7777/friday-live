@@ -2,4 +2,22 @@ section {
     max-width: $content-width;
     width: 100%;
     margin: auto;
+    overflow: hidden;
+   
+}
+@media (max-width:$content-width){
+    .section{
+        max-width: 970px;
+    }
+}
+
+@media (max-width:992px){
+    .section{
+        max-width: 750px;
+    }
+}
+@media (max-width:767px){
+    .section{
+        max-width: none;
+    }
 }

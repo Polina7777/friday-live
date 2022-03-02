@@ -8,11 +8,14 @@ body {
     font-size: 1.8rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
+    
+    @include font($size: 1.6rem, $height: 2.6rem, $weight:normal);
 }
 
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     @include font (44px, 54px, bold );
+  
 }
 h2 {
     font-family: Open Sans;

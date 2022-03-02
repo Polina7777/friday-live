@@ -10,6 +10,10 @@ body {
   font-size: 1.8rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   box-sizing: border-box;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2.6rem;
 }
 
 h1 {
@@ -130,15 +134,38 @@ ul {
   display: flex;
 }
 
+.hamburger {
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+}
+
 section {
   max-width: 1197px;
   width: 100%;
   margin: auto;
+  overflow: hidden;
 }
 
+@media (max-width: 1197px) {
+  .section {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .section {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  .section {
+    max-width: none;
+  }
+}
 .wrapper {
   max-width: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 .header {
@@ -229,6 +256,10 @@ section {
   text-align: center;
 }
 
+.strategies__wrapper {
+  flex-wrap: wrap;
+}
+
 .marketing-strategies__tags {
   padding-top: 25px;
   padding-bottom: 31px;
@@ -262,6 +293,8 @@ section {
 
 .layout-2-column__cards {
   display: flex;
+  max-width: 377px;
+  width: 100%;
 }
 .layout-2-column__cards h3 {
   padding: 0px 30px;

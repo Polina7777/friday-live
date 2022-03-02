@@ -1,4 +1,6 @@
-
+.strategies__wrapper {
+    flex-wrap: wrap;
+}
     
 .marketing-strategies__tags {
     padding-top: 25px;
@@ -35,6 +37,8 @@
 }
 .layout-2-column__cards {
     display: flex;
+    max-width: 377px;
+   width: 100%;
     h3 {
         padding: 0px 30px;
     }
@@ -43,6 +47,7 @@
       padding-bottom: 26px
     }
     .tag-card {
+        
         padding-right: 30px;
     }
     .card-title {
