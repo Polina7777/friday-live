@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -10,6 +11,7 @@ body {
   font-size: 1.8rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   box-sizing: border-box;
+  position: relative;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: normal;
@@ -134,34 +136,152 @@ ul {
   display: flex;
 }
 
-.hamburger {
-  display: inline-block;
+/* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex;
+  /* используем flex для центрирования содержимого */
+  align-items: center;
+  /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 20px;
+  left: 20px;
   width: 31px;
   height: 31px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #173A56;
+  border-radius: 2px;
+}
+
+.menu__btn > span::before {
+  content: "";
+  top: -10px;
+}
+
+.menu__btn > span::after {
+  content: "";
+  top: 10px;
+}
+
+/* контейнер меню */
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 350px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #FFFFFF;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* элементы меню */
+.background-hamburger {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  display: none;
+}
+
+.logo-hamburger {
+  position: absolute;
+  top: 21px;
+  left: 75px;
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.menu__item:hover {
+  background-color: #FFFFFF;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 10;
+  transform: rotate(180deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 10;
+  transform: rotate(180deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: 0.25s;
+}
+
+.menu__box {
+  transition-duration: 0.25s;
+}
+
+.menu__item {
+  transition-duration: 0.25s;
+}
+
+.list__item {
+  padding-bottom: 35px;
+}
+
+.item__link {
+  text-decoration: none;
+  color: #544837;
+  font-size: 22px;
+  line-height: 28px;
+}
+.item__link:hover {
+  color: #FF7549;
 }
 
 section {
-  max-width: 1197px;
+  max-width: 1217px;
+  padding: 0 10px;
   width: 100%;
   margin: auto;
   overflow: hidden;
 }
 
-@media (max-width: 1197px) {
-  .section {
-    max-width: 970px;
-  }
-}
-@media (max-width: 992px) {
-  .section {
-    max-width: 750px;
-  }
-}
-@media (max-width: 767px) {
-  .section {
-    max-width: none;
-  }
-}
 .wrapper {
   max-width: 100%;
   width: 100%;
@@ -177,25 +297,6 @@ section {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
   padding: 15px 0 17px 0;
 }
-
-.header__navigation .navigation__list {
-  display: flex;
-  list-style-type: none;
-}
-.header__navigation .list__item {
-  padding: 0px 8.5px;
-}
-.header__navigation .list__item:last-child {
-  padding-right: 0px;
-}
-.header__navigation .item__link {
-  text-decoration: none;
-  color: #544837;
-}
-.header__navigation .item__link:hover {
-  color: #FF7549;
-}
-
 .header__buttons .button {
   margin-left: 14px;
 }
@@ -203,6 +304,43 @@ section {
   margin-left: 0px;
 }
 
+.header__navigation .navigation__list {
+  display: flex;
+  list-style-type: none;
+}
+.header__navigation .navigation__list .list__item {
+  padding: 0px 8.5px;
+}
+.header__navigation .navigation__list .list__item:last-child {
+  padding-right: 0px;
+}
+.header__navigation .navigation__list .list__item .item__link {
+  text-decoration: none;
+  color: #544837;
+}
+.header__navigation .navigation__list .list__item .item__link:hover {
+  color: #FF7549;
+}
+
+@media (max-width: 1200px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+@media (max-width: 780px) {
+  .header__navigation {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: inline-block;
+  }
+
+  .logo {
+    position: absolute;
+    padding-left: 80px;
+  }
+}
 .promo {
   display: flex;
   justify-content: space-between;
