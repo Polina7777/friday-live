@@ -10,12 +10,13 @@
    .promo-link {
     display: flex;
     align-items: center;
-       padding-left: 44px;    
+       padding-left: 44px;   
+       &__text {
+        color: $color-additional;
+        padding-left: 10px;
+    } 
    }
-   .promo-link__text {
-       color: $color-additional;
-       padding-left: 10px;
-   }
+  
 }
 .promo__buttons {
     display: flex;
@@ -23,4 +24,12 @@
     padding-top: 20px;
     
 }
-
+@media (max-width:780px){
+    .promo {
+        padding-left: 48px;
+        &__buttons {
+            padding-right: 0px;
+            white-space: nowrap;
+        }
+    }
+}

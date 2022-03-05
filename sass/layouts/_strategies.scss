@@ -25,10 +25,11 @@
         margin-bottom: 30px;
         border: 2px $color-border solid;
         border-radius: 8px;
+        &:last-child {
+            margin-right: 0px;
+        }
     }
-    .tag-card:last-child {
-        margin-right: 0px;
-    }
+    
     .card-title {
         &:hover {
             color: $color-additional;
@@ -54,5 +55,16 @@
         &:hover {
             color: $color-additional;
         }
+    }
+   
+}
+@media (max-width:780px){
+    .marketing-strategies {
+        &__tags,&__title,&__text {
+        text-align: center;
+        }
+    }
+    .card-image {
+        max-width: 321px;
     }
 }

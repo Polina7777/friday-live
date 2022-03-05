@@ -30,4 +30,18 @@
     background-image:url(/assets/image/background-tools.svg);
    
 }
+@media (max-width:780px){
+    .tool-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .tools__article-title {
+       margin:20px;
+   }
+   .tools__article-text {
+    padding-bottom: 54px;
+    text-align: center;
+   }
+}
 }
