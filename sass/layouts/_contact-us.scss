@@ -3,13 +3,25 @@
     background-color: $color-background;
 }
 .contact-us {
- .contact-us__information {
-     padding-right: 91px;
-     padding-top: 60px;
- }
- .contact-us__article {
-    padding-bottom: 33px;;
- }
+    &__button {
+        margin-bottom: 50px;
+    }
+    &__article {
+        padding-bottom: 33px;
+     }
+    @media (max-width: 780px){
+    text-align: center;
+    &__information {
+        padding-right: 91px;
+        padding-top: 60px;
+        @media (max-width: 780px) {
+            padding-right: 0px;
+            padding-top: 20px;
+        }
+    }
+    }
+
+ 
  .telefon__number {
      text-decoration: none;
      color: $color-text;
@@ -17,11 +29,15 @@
  }
  .mail {
     padding-bottom: 90px;
+    @media (max-width: 780px) {
+        padding-bottom: 50px;
+        &__address {
+            text-decoration: none;
+            color: $color-text;  
+         }
+    }
  }
- .mail__address {
-    text-decoration: none;
-    color: $color-text;  
- }
+
 }
 .form {
     display: flex;
@@ -61,4 +77,12 @@
         border-radius: 4px;
         margin-bottom: 15px;
     }
+}
+@media (max-width: 780px) {
+    .layout-2-column {
+        flex-direction: column;
+    }
+  .form input {
+  margin-right: 0px;
+  }
 }

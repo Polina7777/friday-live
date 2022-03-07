@@ -481,8 +481,16 @@ section {
     text-align: center;
   }
 
+  .tag-card {
+    max-width: 321px;
+  }
+
   .card-image {
     max-width: 321px;
+  }
+
+  .big-layout {
+    padding: 0 39px 0 39px;
   }
 }
 .about-us .about-us__article {
@@ -513,17 +521,56 @@ section {
   text-decoration: underline;
 }
 
+@media (max-width: 780px) {
+  .about-us__title, .about-us__article {
+    text-align: center;
+  }
+  .about-us__article {
+    padding: 0 46px 36px 46px;
+  }
+
+  .layout-3-column-employees {
+    padding-bottom: 31px;
+  }
+
+  .pagination__controls {
+    display: flex;
+  }
+
+  .control-item {
+    display: flex;
+    list-style-type: none;
+    border-radius: 4px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #2f281e;
+  }
+}
 .contact-us__background {
   max-width: 100%;
   background-color: #FFEEE1;
 }
 
-.contact-us .contact-us__information {
-  padding-right: 91px;
-  padding-top: 60px;
+.contact-us__button {
+  margin-bottom: 50px;
 }
-.contact-us .contact-us__article {
+.contact-us__article {
   padding-bottom: 33px;
+}
+@media (max-width: 780px) {
+  .contact-us {
+    text-align: center;
+  }
+  .contact-us__information {
+    padding-right: 91px;
+    padding-top: 60px;
+  }
+}
+@media (max-width: 780px) and (max-width: 780px) {
+  .contact-us__information {
+    padding-right: 0px;
+    padding-top: 20px;
+  }
 }
 .contact-us .telefon__number {
   text-decoration: none;
@@ -532,9 +579,14 @@ section {
 .contact-us .mail {
   padding-bottom: 90px;
 }
-.contact-us .mail__address {
-  text-decoration: none;
-  color: #544837;
+@media (max-width: 780px) {
+  .contact-us .mail {
+    padding-bottom: 50px;
+  }
+  .contact-us .mail__address {
+    text-decoration: none;
+    color: #544837;
+  }
 }
 
 .form {
@@ -572,6 +624,15 @@ section {
   margin-bottom: 15px;
 }
 
+@media (max-width: 780px) {
+  .layout-2-column {
+    flex-direction: column;
+  }
+
+  .form input {
+    margin-right: 0px;
+  }
+}
 .footer {
   display: flex;
   flex-direction: row;

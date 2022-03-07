@@ -6,27 +6,50 @@
         justify-content: space-between;
         padding-bottom: 101px;
     }
-   .employees-card {
-    display:flex;
-    position: relative;
-    border: 3px solid $color-border;
-    padding: 36px 0px 30px 30px;
-    margin-right: 33px;
-    max-width: 345px;
-    width: 100%;
-    .employees-foto {
-        position: absolute ;
-        top:0px;
-        right: -67px;
-       
-    }
-    .person-mail {
-        text-decoration: none;
-        a:hover {
-            text-decoration: underline;
+    .employees-card {
+        display: flex;
+        position: relative;
+        border: 3px solid $color-border;
+        padding: 36px 0px 30px 30px;
+        margin-right: 33px;
+        max-width: 345px;
+        width: 100%;
+        .employees-foto {
+            position: absolute;
+            top: 0px;
+            right: -67px;
+        }
+        .person-mail {
+            text-decoration: none;
+            a:hover {
+                text-decoration: underline;
+            }
         }
     }
-   }
-   
 }
 
+@media (max-width: 780px) {
+    .about-us {
+        &__title,
+        &__article {
+            text-align: center;
+        }
+        &__article {
+            padding: 0 46px 36px 46px;
+        }
+    }
+    .layout-3-column-employees {
+        padding-bottom: 31px;
+    }
+    .pagination__controls {
+        display: flex;
+    }
+    .control-item {
+        display: flex;
+        list-style-type: none;
+        border-radius: 4px;
+        width: 8px;
+        height: 8px;
+        border: 1px solid #2f281e;
+    }
+}
