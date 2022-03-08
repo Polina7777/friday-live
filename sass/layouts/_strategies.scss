@@ -12,6 +12,9 @@
 }
 .layout-3-column__cards {
     display: flex;
+    @media (max-width:780px){
+    flex-wrap: wrap;
+    }
   h3 {
       padding: 0px 30px;
   }
@@ -28,6 +31,11 @@
         &:last-child {
             margin-right: 0px;
         }
+        @media (max-width:780px){
+         display: flex;
+         flex-direction: column;
+
+        }
     }
     
     .card-title {
@@ -38,6 +46,9 @@
 }
 .layout-2-column__cards {
     display: flex;
+    @media (max-width:780px){
+    flex-wrap: wrap;
+    }
     max-width: 377px;
    width: 100%;
     h3 {
@@ -63,14 +74,26 @@
         &__tags,&__title,&__text {
         text-align: center;
         }
+        @media (max-width:400px){
+            &__text {
+                padding: 0 21px;
+            }
+        }
     }
     .tag-card {
         max-width: 321px;
     }
     .card-image {
         max-width: 321px;
+        @media (max-width:780px){
+            max-width: 321px;
+        flex-grow: 1;
+        }
     }
     .big-layout {
-        padding: 0 39px 0 39px;
+        padding: 0 39px ;
+        @media (max-width:400px){
+            padding: 0 15px;
+        }
     }
 }

@@ -3,6 +3,25 @@
     background-color: $color-background;
 }
 .contact-us {
+    .telefon{
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        line-height: 26px;
+        padding-bottom: 19px;
+        &__image {
+            padding-right: 11px;
+        }
+    }
+    .mail {
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        line-height: 26px;
+        &__image {
+            padding-right: 11px;
+        }
+    }
     &__button {
         margin-bottom: 50px;
     }

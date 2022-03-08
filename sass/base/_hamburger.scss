@@ -67,6 +67,18 @@
       top:21px;
       left:75px;
   }
+  .header__buttons-hamburger {
+      position: absolute;
+      
+      @media (max-width: 780px) {
+          display: none;
+      }
+      @media (max-width:400px) {
+          display: flex;
+          flex-direction: column;
+          left:75px;
+      }
+  }
   .menu__item {
     display: block;
     padding: 12px 24px;

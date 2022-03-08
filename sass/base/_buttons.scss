@@ -10,11 +10,14 @@
     border-radius: 4px;
     
         background-color: $color-additional ;
-    
+     @media(max-width:400px) {
+         padding: 11px 60px 13px;
+     }
     &_bordered {
         background-color: $color-light;
         border: 3px solid $color-border;
         color: $color-text;
+        
     }
     &_colored {
         background-color: $color-primary;

@@ -35,9 +35,32 @@
         }
     }
  }
+  @media (max-width:1200px){
+        .hamburger-menu {
+            display:none
+        }
+    }
+
+
+     .header__navigation {
+         display:none;
+     }
+     .hamburger-menu {
+         display: inline-block;
+     }
+     .logo {
+         
+         padding-left: 10px;
+         position: absolute;
+         left: 64px;
+         
+     }
+     
+    } 
+  
+
    
-   
-}   
+  
     @media (max-width:1200px){
         .hamburger-menu {
             display:none
@@ -45,7 +68,7 @@
     }
 
 
- @media (max-width:780px){
+    @media (max-width:780px){
     
      .header__navigation {
          display:none;
@@ -54,9 +77,21 @@
          display: inline-block;
      }
      .logo {
+         
+         padding-left: 10px;
          position: absolute;
-         padding-left: 80px;
+         left: 64px;
             
      }
      
     } 
+
+
+@media (max-width:400px){
+    .header__buttons {
+     display:none;
+    }
+ .logo {
+     top:21px;
+ }
+}

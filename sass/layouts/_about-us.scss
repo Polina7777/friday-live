@@ -14,10 +14,17 @@
         margin-right: 33px;
         max-width: 345px;
         width: 100%;
+        @media (max-width:780px){
+            padding: 36px 0px 0px 30px;
+        }
         .employees-foto {
             position: absolute;
             top: 0px;
             right: -67px;
+            @media (max-width:780px){ 
+           position: relative;
+           right: 0px;;
+            }
         }
         .person-mail {
             text-decoration: none;
@@ -40,9 +47,14 @@
     }
     .layout-3-column-employees {
         padding-bottom: 31px;
+        @media (max-width:780px){
+        overflow: scroll;
+        }
     }
     .pagination__controls {
         display: flex;
+        justify-content: center;
+        
     }
     .control-item {
         display: flex;
@@ -53,3 +65,9 @@
         border: 1px solid #2f281e;
     }
 }
+@media(max-width:400px){
+    .about-us__article {
+        padding: 0 21px 27px;
+    }
+}
+
