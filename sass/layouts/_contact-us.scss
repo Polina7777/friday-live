@@ -5,7 +5,10 @@
 .contact-us {
     .telefon{
         display: flex;
-        justify-content: center;
+        @media (max-width:780px)
+        {justify-content: center;
+        }
+        
         font-size: 25px;
         line-height: 26px;
         padding-bottom: 19px;
@@ -15,9 +18,16 @@
     }
     .mail {
         display: flex;
-        justify-content: center;
+        @media (max-width:780px)
+        {justify-content: center;
+        }
+        
         font-size: 25px;
         line-height: 26px;
+        &__address {
+        text-decoration: none;
+        color: $color-text;
+        }
         &__image {
             padding-right: 11px;
         }
@@ -27,6 +37,10 @@
     }
     &__article {
         padding-bottom: 33px;
+        padding-right: 90px;
+        @media (max-width:780px){
+            padding-right: 0px;
+        }
      }
     @media (max-width: 780px){
     text-align: center;

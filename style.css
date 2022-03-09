@@ -103,7 +103,7 @@ ul {
 }
 @media (max-width: 400px) {
   .button {
-    padding: 11px 60px 13px;
+    padding: 11px 40px 13px;
   }
 }
 .button_bordered {
@@ -147,6 +147,15 @@ ul {
 }
 
 /* скрываем чекбокс */
+.hamburger-menu {
+  display: none;
+}
+@media (max-width: 780px) {
+  .hamburger-menu {
+    display: block;
+  }
+}
+
 #menu__toggle {
   opacity: 0;
 }
@@ -163,7 +172,7 @@ ul {
   width: 31px;
   height: 31px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* добавляем "гамбургер" */
@@ -193,6 +202,7 @@ ul {
   display: block;
   position: fixed;
   visibility: hidden;
+  z-index: 1;
   top: 0;
   left: -100%;
   width: 350px;
@@ -204,18 +214,26 @@ ul {
   background-color: #FFFFFF;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
 }
+@media (max-width: 400px) {
+  .menu__box {
+    width: 400px;
+    height: 80%;
+  }
+}
 
 /* элементы меню */
 .background-hamburger {
   width: 100%;
   height: 100%;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.3;
   position: absolute;
   left: 0px;
   top: 0px;
   right: 0px;
   display: none;
+  transition-duration: 0.25s;
+  z-index: 1;
 }
 
 .logo-hamburger {
@@ -236,7 +254,7 @@ ul {
   .header__buttons-hamburger {
     display: flex;
     flex-direction: column;
-    left: 75px;
+    left: 120px;
   }
 }
 
@@ -270,6 +288,10 @@ ul {
 #menu__toggle:checked ~ .menu__box {
   visibility: visible;
   left: 0;
+}
+
+#menu__toggle:checked ~ .background-hamburger {
+  display: block;
 }
 
 .menu__btn > span,
@@ -417,10 +439,24 @@ section {
     line-height: 42px;
   }
 }
+.promo .promo__buttons {
+  display: flex;
+}
+@media (max-width: 400px) {
+  .promo .promo__buttons {
+    flex-direction: column;
+  }
+}
 .promo .promo-link {
   display: flex;
   align-items: center;
-  padding-left: 44px;
+  padding-left: 40px;
+}
+@media (max-width: 780px) {
+  .promo .promo-link {
+    padding-left: 40px;
+    white-space: nowrap;
+  }
 }
 @media (max-width: 400px) {
   .promo .promo-link {
@@ -531,6 +567,7 @@ section {
 }
 .layout-3-column__cards h3 {
   padding: 0px 30px;
+  flex-grow: 1;
 }
 .layout-3-column__cards .tag-card__button {
   padding: 0px 30px;
@@ -567,6 +604,17 @@ section {
 }
 .layout-2-column__cards h3 {
   padding: 0px 30px;
+  flex-grow: 1;
+}
+@media (max-width: 400px) {
+  .layout-2-column__cards h3 {
+    padding-right: 0px;
+  }
+}
+@media (max-width: 400px) {
+  .layout-2-column__cards .fifth-card {
+    display: none;
+  }
 }
 .layout-2-column__cards .tag-card__button {
   padding: 0px 30px;
@@ -574,6 +622,16 @@ section {
 }
 .layout-2-column__cards .tag-card {
   padding-right: 30px;
+}
+@media (max-width: 780px) {
+  .layout-2-column__cards .tag-card {
+    padding-right: 0px;
+  }
+}
+@media (max-width: 400px) {
+  .layout-2-column__cards .tag-card {
+    padding-right: 0px;
+  }
 }
 .layout-2-column__cards .card-title:hover {
   color: #FF7549;
@@ -592,6 +650,7 @@ section {
 @media (max-width: 780px) {
   .tag-card {
     max-width: 321px;
+    padding-right: 0px;
   }
 }
 @media (max-width: 780px) {
@@ -602,7 +661,6 @@ section {
 @media (max-width: 780px) and (max-width: 780px) {
   .card-image {
     max-width: 321px;
-    flex-grow: 1;
   }
 }
 @media (max-width: 780px) {
@@ -613,6 +671,11 @@ section {
 @media (max-width: 780px) and (max-width: 400px) {
   .big-layout {
     padding: 0 15px;
+  }
+}
+@media (max-width: 780px) and (max-width: 400px) {
+  .last-layout {
+    display: none;
   }
 }
 .about-us .about-us__article {
@@ -699,19 +762,31 @@ section {
 
 .contact-us .telefon {
   display: flex;
-  justify-content: center;
   font-size: 25px;
   line-height: 26px;
   padding-bottom: 19px;
+}
+@media (max-width: 780px) {
+  .contact-us .telefon {
+    justify-content: center;
+  }
 }
 .contact-us .telefon__image {
   padding-right: 11px;
 }
 .contact-us .mail {
   display: flex;
-  justify-content: center;
   font-size: 25px;
   line-height: 26px;
+}
+@media (max-width: 780px) {
+  .contact-us .mail {
+    justify-content: center;
+  }
+}
+.contact-us .mail__address {
+  text-decoration: none;
+  color: #544837;
 }
 .contact-us .mail__image {
   padding-right: 11px;
@@ -721,6 +796,12 @@ section {
 }
 .contact-us__article {
   padding-bottom: 33px;
+  padding-right: 90px;
+}
+@media (max-width: 780px) {
+  .contact-us__article {
+    padding-right: 0px;
+  }
 }
 @media (max-width: 780px) {
   .contact-us {

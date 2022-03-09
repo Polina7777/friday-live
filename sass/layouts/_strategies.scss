@@ -15,8 +15,10 @@
     @media (max-width:780px){
     flex-wrap: wrap;
     }
+   
   h3 {
       padding: 0px 30px;
+      flex-grow: 1;
   }
   
   .tag-card__button {
@@ -36,8 +38,10 @@
          flex-direction: column;
 
         }
+       
+       
     }
-    
+   
     .card-title {
         &:hover {
             color: $color-additional;
@@ -51,8 +55,19 @@
     }
     max-width: 377px;
    width: 100%;
+
+   
     h3 {
         padding: 0px 30px;
+        flex-grow: 1;
+        @media (max-width:400px){
+            padding-right: 0px;
+        }
+    }
+    .fifth-card {
+        @media(max-width: 400px){
+            display: none;
+        }
     }
     .tag-card__button {
       padding: 0px 30px;
@@ -61,6 +76,12 @@
     .tag-card {
         
         padding-right: 30px;
+        @media (max-width:780px){
+            padding-right: 0px;
+        }
+        @media(max-width:400px){
+            padding-right: 0px;
+        }
     }
     .card-title {
         &:hover {
@@ -82,18 +103,24 @@
     }
     .tag-card {
         max-width: 321px;
+        padding-right: 0px;
     }
     .card-image {
         max-width: 321px;
         @media (max-width:780px){
             max-width: 321px;
-        flex-grow: 1;
+        
         }
     }
     .big-layout {
         padding: 0 39px ;
         @media (max-width:400px){
             padding: 0 15px;
+        }
+    }
+    .last-layout {
+        @media (max-width:400px){
+            display: none;
         }
     }
 }
