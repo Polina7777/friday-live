@@ -8,12 +8,11 @@
     cursor: pointer;
     transition: all 0.3s;
     border-radius: 4px;
-    
-        background-color: $color-additional ;
-     @media(max-width:400px) {
-         padding: 11px 40px 13px;
-     }
+  
     &_bordered {
+        @media(max-width:550px) {
+         margin-bottom: 10px;
+        }
         background-color: $color-light;
         border: 3px solid $color-border;
         color: $color-text;
@@ -23,19 +22,21 @@
         background-color: $color-primary;
         color: $color-light;
         border: 3px solid $color-primary;
-        &:hover {
-            background-color: $color-additional ;
-        }
     }
     &_big {
         padding:15px 40px;
          
     }
     &_small {
-        background-color: $color-border;
+        
+       
         padding: 7px 14px;
         border-radius: 90px;
         
+    }
+    
+    @media(max-width:550px) {
+        padding: 11px 40px 13px;
     }
 }
 

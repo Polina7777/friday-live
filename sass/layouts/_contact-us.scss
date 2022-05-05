@@ -5,7 +5,7 @@
 .contact-us {
     .telefon{
         display: flex;
-        @media (max-width:780px)
+        @media (max-width:850px)
         {justify-content: center;
         }
         
@@ -18,7 +18,7 @@
     }
     .mail {
         display: flex;
-        @media (max-width:780px)
+        @media (max-width:850px)
         {justify-content: center;
         }
         
@@ -38,16 +38,16 @@
     &__article {
         padding-bottom: 33px;
         padding-right: 90px;
-        @media (max-width:780px){
+        @media (max-width:850px){
             padding-right: 0px;
         }
      }
-    @media (max-width: 780px){
+    @media (max-width: 850px){
     text-align: center;
     &__information {
         padding-right: 91px;
         padding-top: 60px;
-        @media (max-width: 780px) {
+        @media (max-width: 850px) {
             padding-right: 0px;
             padding-top: 20px;
         }
@@ -62,7 +62,7 @@
  }
  .mail {
     padding-bottom: 90px;
-    @media (max-width: 780px) {
+    @media (max-width: 850px) {
         padding-bottom: 50px;
         &__address {
             text-decoration: none;
@@ -111,7 +111,7 @@
         margin-bottom: 15px;
     }
 }
-@media (max-width: 780px) {
+@media (max-width: 850px) {
     .layout-2-column {
         flex-direction: column;
     }

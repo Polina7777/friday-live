@@ -11,12 +11,12 @@
     &__list-item {
         padding-bottom: 20px;
         margin:0px;
-        @media (max-width:780px){
+        @media (max-width:850px){
             padding-bottom: 10px;
            
         }
     }
-    @media (max-width:780px){
+    @media (max-width:850px){
         flex-direction: column;
         .logo {
             padding-bottom: 31px;
@@ -28,22 +28,22 @@
  .footer-navigation__navigation {
      display: flex;
      justify-content: space-between;
-     @media (max-width:780px){ 
+     @media (max-width:850px){ 
       padding-left: 15px;
       padding-top: 20px;
      }
-     @media (max-width:400px) {
+     @media (max-width:550px) {
          flex-direction: column;
      }
 
  }
  .navigation-column{
      padding-left: 151px;
-     @media (max-width:780px){
+     @media (max-width:850px){
          padding-left: 100px;
          &:first-child{
              padding-left: 10px;
-             @media (max-width:400px){
+             @media (max-width:550px){
                  padding-left: 0px;
              }
          }
@@ -51,7 +51,7 @@
              padding-right: 10px;
          }
      }
-     @media (max-width:400px){
+     @media (max-width:550px){
          padding-left: 0px;
      }
  }
@@ -65,7 +65,7 @@
         margin-bottom: 72px;
        
     } 
-    @media(max-width: 400px){
+    @media(max-width: 550px){
         margin-bottom: 0px;
         padding-bottom: 0px;
         &:first-child{

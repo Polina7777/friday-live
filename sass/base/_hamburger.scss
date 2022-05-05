@@ -1,7 +1,7 @@
 /* скрываем чекбокс */
 .hamburger-menu {
         display: none;
-        @media(max-width:780px){
+        @media(max-width:850px){
             display: block;
         }
     }
@@ -57,7 +57,7 @@
     text-align: center;
     background-color:$color-light;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-    @media(max-width:400px){
+    @media(max-width:550px){
         width: 400px;
         height: 80%;
     }
@@ -84,10 +84,10 @@
   .header__buttons-hamburger {
       position: absolute;
       
-      @media (max-width: 780px) {
+      @media (max-width: 850px) {
           display: none;
       }
-      @media (max-width:400px) {
+      @media (max-width:550px) {
           display: flex;
           flex-direction: column;
           left:120px;

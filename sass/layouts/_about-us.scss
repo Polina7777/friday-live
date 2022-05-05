@@ -14,14 +14,14 @@
         margin-right: 33px;
         max-width: 345px;
         width: 100%;
-        @media (max-width:780px){
+        @media (max-width:850px){
             padding: 36px 0px 0px 30px;
         }
         .employees-foto {
             position: absolute;
             top: 0px;
             right: -67px;
-            @media (max-width:780px){ 
+            @media (max-width:850px){ 
            position: relative;
            right: 0px;;
             }
@@ -35,7 +35,7 @@
     }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 850px) {
     .about-us {
         &__title,
         &__article {
@@ -47,7 +47,7 @@
     }
     .layout-3-column-employees {
         padding-bottom: 31px;
-        @media (max-width:780px){
+        @media (max-width:850px){
         overflow: scroll;
         }
     }
@@ -65,7 +65,7 @@
         border: 1px solid #2f281e;
     }
 }
-@media(max-width:400px){
+@media(max-width:550px){
     .about-us__article {
         padding: 0 21px 27px;
     }

@@ -1,19 +1,23 @@
 .strategies__wrapper {
     flex-wrap: wrap;
 }
-    
+.strategy {
+    &_hidden {
+        display: none;
+    }
+}
 .marketing-strategies__tags {
     padding-top: 25px;
     padding-bottom: 31px;
-    .tag__button:first-child {
-        background-color: $color-primary;
-    }
+
    
 }
 .layout-3-column__cards {
     display: flex;
-    @media (max-width:780px){
+    @media (max-width:850px){
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap:30px;
     }
    
   h3 {
@@ -26,16 +30,18 @@
     padding-bottom: 26px
   }
     .tag-card {
-        margin-right: 30px;
-        margin-bottom: 30px;
+        cursor:pointer;
+       
         border: 2px $color-border solid;
         border-radius: 8px;
         &:last-child {
             margin-right: 0px;
         }
-        @media (max-width:780px){
+        @media (max-width:850px){
          display: flex;
          flex-direction: column;
+         flex-basis: calc(50% - 15px);
+
 
         }
        
@@ -50,9 +56,11 @@
 }
 .layout-2-column__cards {
     display: flex;
-    @media (max-width:780px){
-    flex-wrap: wrap;
-    }
+    @media (max-width:850px){
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap:30px;
+        }
     max-width: 377px;
    width: 100%;
 
@@ -60,15 +68,18 @@
     h3 {
         padding: 0px 30px;
         flex-grow: 1;
-        @media (max-width:400px){
+        @media (max-width:550px){
             padding-right: 0px;
         }
     }
+    
     .fifth-card {
-        @media(max-width: 400px){
+        @media(max-width: 550px){
             display: none;
         }
     }
+ 
+    
     .tag-card__button {
       padding: 0px 30px;
       padding-bottom: 26px
@@ -76,10 +87,13 @@
     .tag-card {
         
         padding-right: 30px;
-        @media (max-width:780px){
-            padding-right: 0px;
-        }
-        @media(max-width:400px){
+        @media (max-width:850px){
+            display: flex;
+            flex-direction: column;
+            flex-basis: calc(50% - 15px);
+           }
+          
+        @media(max-width:550px){
             padding-right: 0px;
         }
     }
@@ -90,12 +104,12 @@
     }
    
 }
-@media (max-width:780px){
+@media (max-width:850px){
     .marketing-strategies {
         &__tags,&__title,&__text {
         text-align: center;
         }
-        @media (max-width:400px){
+        @media (max-width:550px){
             &__text {
                 padding: 0 21px;
             }
@@ -104,22 +118,23 @@
     .tag-card {
         max-width: 321px;
         padding-right: 0px;
+        
     }
     .card-image {
-        max-width: 321px;
-        @media (max-width:780px){
-            max-width: 321px;
+       
+        @media (max-width:850px){
+           width: 100%;
         
         }
     }
     .big-layout {
         padding: 0 39px ;
-        @media (max-width:400px){
+        @media (max-width:550px){
             padding: 0 15px;
         }
     }
     .last-layout {
-        @media (max-width:400px){
+        @media (max-width:550px){
             display: none;
         }
     }

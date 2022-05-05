@@ -3,13 +3,13 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 30px; 
-    @media (max-width:400px){
+    @media (max-width:550px){
         flex-direction: column-reverse;
     }
 
     .promo-content {
         padding-right: 49px;
-        @media(max-width: 400px){
+        @media(max-width: 550px){
             text-align: center;
             padding-right: 0px;
             &__title {
@@ -20,7 +20,7 @@
         }
      .promo__buttons {
          display: flex;
-         @media(max-width:400px){
+         @media(max-width:550px){
              flex-direction: column;
          }
      }
@@ -28,11 +28,11 @@
     display: flex;
     align-items: center;
     padding-left: 40px;
-       @media(max-width:780px){
+       @media(max-width:850px){
            padding-left: 40px;
            white-space: nowrap;
        }
-       @media(max-width:400px){
+       @media(max-width:550px){
         padding-left: 80px;
         padding-top: 25px;
     }   
@@ -47,19 +47,19 @@
   
 }
 .promo-image{
-    @media(max-width: 400px) {
+    @media(max-width: 550px) {
         width: 100%;
     }
 .promo__buttons {
     display: flex;
     padding-right:44px ;
     padding-top: 20px;
-    @media (max-width:400px){
+    @media (max-width:550px){
         flex-direction: column;
     }
     
 }
-@media (max-width:780px){
+@media (max-width:850px){
     .promo {
         padding-left: 48px;
         &__buttons {
