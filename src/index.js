@@ -1,3 +1,6 @@
+import "./style.scss"
+
+
 const data = [
     {
         id: 1,
